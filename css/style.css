@@ -1,0 +1,388 @@
+@font-face {
+    font-family: 'ArumSansRg';
+    src: url('../fonts/ArumSansRegular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/ArumSansRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/ArumSansRegular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/ArumSansRegular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/ArumSansRegular.svg#ArumSansRegular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+* {
+    padding:0;
+    margin:0;
+}
+
+html, body, .header, .header div {
+    position:fixed;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    min-height:550px;
+    min-width:888.889px;
+}
+    body {
+        background-color: black;
+    }
+        .header {
+            -moz-user-select: none; 
+            -khtml-user-select: none; 
+            -webkit-user-select: none; 
+            -o-user-select: none; 
+        }
+            .header div {
+                position: absolute;
+                overflow:hidden;
+                display: none;
+            }
+            .onScreen {
+                display: block !important;
+            }
+                .header div img, .header div video {
+                    position:absolute;
+                    width:177.7778vh;
+                    height:100vh;
+                    left:50%;
+                    margin-left:-88.889vh;
+                    min-height:550px;
+                    min-width:888.889px;
+                }
+                .header div .slideText {
+                    display:none;
+                    position: absolute;
+                    font-family: ArumSansRg;
+                    font-size: 20px;
+                    line-height: 26px;
+                    letter-spacing: .0625em;
+                    color:rgba(255,255,255,.8);
+                    background-image: url("../images/bursts.png"), linear-gradient(190deg, rgba(36,161,225,.9) 20%, rgba(36,161,225,.5) 40%, rgba(255,255,255,0) 60%);
+                    background-repeat: no-repeat;
+                    background-position: 97% 7px, 0px 0px;
+                    background-size: 15%, 100%;
+                    padding:40px 45px 0 20px;
+                    height: 400px !important;
+                    min-width:0;
+                    min-height:0;
+                    -moz-user-select: text; 
+                    -khtml-user-select: text; 
+                    -webkit-user-select: text; 
+                    -o-user-select: text; 
+                }
+                .header div .slideText.textShowing {
+                    display:block;
+                    opacity: 0;
+                }
+                #slide1_stop0 {
+                    right:4%;
+                    top:200px;
+                    width:300px;
+                }
+                #slide2_stop0 {
+                    right:4%;
+                    top:200px;
+                    width:300px;
+                }
+                #slide2_stop1 {
+                    right:4%;
+                    top:200px;
+                    width:225px;
+                }
+                #slide2_stop2 {
+                    right:4%;
+                    top:200px;
+                    width:250px;
+                }
+                #slide2_stop3 {
+                    right:4%;
+                    top:200px;
+                    width:325px;
+                }
+                #slide2_stop4{
+                    right:4%;
+                    top:200px;
+                    width:325px;
+                }
+                #slide2_stop5 {
+                    right:4%;
+                    top:200px;
+                    width:250px;
+                }
+                #slide2_stop6 {
+                    right:4%;
+                    top:200px;
+                    width:325px;
+                }
+                #slide2_stop7 {
+                    right:4%;
+                    top:200px;
+                    width:300px;
+                }
+                #slide2_stop8 {
+                    right:4%;
+                    top:200px;
+                    width:300px;
+                }
+                #slide2_stop9 {
+                    right:4%;
+                    top:200px;
+                    width:250px;
+                }
+                #slide2_stop10 {
+                    right:4%;
+                    top:200px;
+                    width:250px;
+                }
+                #slide2_stop11 {
+                    right:4%;
+                    top:200px;
+                    width:250px;
+                }
+                .header div .slideText#slide2_stop12 {
+                    left:6%;
+                    top:100px;
+                    width:425px;
+                    height:600px !important;
+                }
+                    .header div .slideText#slide2_stop12 p {
+                        margin-bottom:10px;
+                        margin-top: 10px;
+                    }
+                #slide3_stop0 {
+                    right:4%;
+                    top:200px;
+                    width:250px;
+                }
+                #slide3_stop1 {
+                    right:4%;
+                    top:200px;
+                    width:300px;
+                }
+                #slide3_stop2 {
+                    right:4%;
+                    top:200px;
+                    width:300px;
+                }
+                #slide3_stop3 {
+                    right:4%;
+                    top:200px;
+                    width:325px;
+                }
+                #slide3_stop4 {
+                    right:4%;
+                    top:200px;
+                    width:275px;
+                }
+                #slide3_stop5 {
+                     left:6%;
+                    top:100px;
+                    width:425px;
+                    height:600px !important;
+                }
+                    .header div .slideText#slide3_stop5 p {
+                        margin-bottom:10px;
+                        margin-top: 10px;
+                    }
+                #slide4_stop0 {
+                    width:250px;
+                    left: 6%;
+                    top:150px;
+                }
+                    #slide4_stop0 p {
+                        margin-bottom: 10px;
+                    }
+                    .header div .slideText ul {
+                        margin-left:35px;
+                    }
+                        .header div .slideText ul li {
+                            margin-bottom:5px;
+                        }
+                .header div .slideText #backToConnectED2, .header div .slideText .otherSectionButton {
+                    position: relative;
+                    height:50px;
+                    width: 184px;
+                    display: block;
+                    background-image:url("../images/trial_button.png");
+                    opacity: .9;
+                    min-height: 0;
+                    min-width: 0;
+                    background-repeat: no-repeat;
+                    margin: 0 auto;
+                    cursor:pointer;
+                }
+                    .header div .slideText #backToConnectED2 a {
+                        position: absolute;
+                        height: 50px;
+                        width:184px;
+                    }
+
+
+                .header div .slideText #toStudent {
+                    background-image: url("../images/toStudent.png");
+                    width:219px;
+                }
+                .header div .slideText #toTeacher {
+                    background-image: url("../images/toTeacher.png");
+                    width:219px;
+                }
+        .topnav {
+            position: absolute;
+            top:0px;
+            left:0px;
+            height:100px;
+            vertical-align: baseline;
+            width:1021px;
+            -moz-user-select: none; 
+            -khtml-user-select: none; 
+            -webkit-user-select: none; 
+            -o-user-select: none; 
+        }
+            .topnav .logo {
+                height: 80px;
+                width: 80px;
+                display: inline-block;
+                background-color: red;
+                float: left;
+            }
+                .topnav .logo img {
+                    width:100%;
+                }
+            .topnav .navButton, .topnav .closeButton {
+                margin-left: 20px;
+                font-size: 20px;
+                font-family: arial,sans-serif;
+                height:80px;
+                line-height: 80px;
+                top:0;
+                float: left;
+                opacity: .8;
+                cursor:pointer;
+                background-repeat: no-repeat;
+            }
+            .topnav .navButton#home {
+                width:250px;
+                margin-left:80px;
+                background-image: url("../images/IS_Logo.png");
+                background-position: center;
+                background-size: 250px;
+            }
+            .topnav .navButton#teacher {
+                background-image:url("../images/teacher_1.png");
+                width:104px;
+            }
+             .topnav .navButton#student {
+                background-image:url("../images/student_1.png");
+                width:104px;
+            }
+             .topnav .navButton#explore {
+                background-image:url("../images/explore_1.png");
+                width:104px;
+            }
+            .topnav .closeButton#backToConnectED {
+                background-image:url("../images/microsite_back.png");
+                width:304px;
+            }
+            .navButton.currentBtn#home{
+                background-image:url("../images/IS_Logo_Selected.png");
+            }
+            .navButton.currentBtn#teacher{
+                background-image:url("../images/teacher_2.png");
+            }
+            .navButton.currentBtn#student{
+                background-image:url("../images/student_2.png");
+            }
+            .navButton.currentBtn#explore{
+                background-image:url("../images/explore_2.png");
+            }
+        .bottomnav {
+            position: absolute;
+            bottom: 25px;
+            right:25px;
+            -moz-user-select: none; 
+            -khtml-user-select: none; 
+            -webkit-user-select: none; 
+            -o-user-select: none; 
+        }
+            .arrows {
+                cursor:pointer;
+                display: inline-block;
+                width:35px;
+                height:35px;
+                background-repeat: no-repeat;
+                background-size: 35px;
+                margin-left: 40px;
+                opacity: .9;
+            }
+                #larrow {
+                    background-image: url("../images/arrow_back.png");
+                }
+                #rarrow {
+                    position:relative;
+                    background-image: url("../images/arrow_for.png");
+                }
+                .deactivateArrow {
+                    opacity: .2;
+                }  
+        .topnav, .bottomnav {
+            z-index: 100;
+        }
+        .timeBar {
+            position: absolute;
+            z-index: 100;
+            width:100%;
+            height:10px;
+            bottom:0;
+        }
+            .timeBar .fullScale {
+                position: absolute;
+                top:0;
+                width:100%;
+                height:10px;
+                background-color:rgba(255,255,255,0.3);    
+            }
+            .timeBar .currentPercent {
+                position: absolute;
+                top:0;
+                width:0%;
+                height:10px;
+                background-color:rgba(255,255,255,0.5);    
+            }
+        .hideTimeBar {
+            display: none;
+        }
+audio {
+    display:none;
+}
+
+@media (min-aspect-ratio:89/50) {
+    .header div img, .header div video {
+        position:absolute;
+        width:100vw;
+        height:56.25vw;
+        left:0;
+        margin-left:0;
+        min-height:550px;
+        min-width:977.7735px;
+    }
+}
+
+@media all and (min-device-width:768px) and (max-device-width:1024px) {
+    .header div img, .header div video {
+        position:absolute;
+        width:112.5%;
+        height:100%;
+        left: 50%;
+        margin-left:-50%;
+        min-height:550px;
+        min-width:888.889px;
+    }
+    .header div video {
+        margin-left:-62%;
+    }
+    #slide1_stop0, #slide2_stop0, #slide2_stop1, #slide2_stop2, #slide2_stop3, #slide2_stop4, #slide2_stop5, #slide2_stop6, #slide2_stop7, #slide2_stop8, #slide2_stop9, #slide3_stop0, #slide3_stop1, #slide3_stop2, #slide3_stop3, #slide3_stop4, #slide3_stop5  {
+        right:2%;
+        top:16%;
+        width:22%;
+    }
+
+}
